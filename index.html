@@ -3,90 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="avatar.JPG" alt="Игорь Иванов" width="300">
-    <h1>Игорь Иванов</h1>
+    <div class="container">
 
-    <p>
-        Я занимаюсь <strong>Web-разработкой</strong> недавно. <br>Моя цель запустить полноценный сайт разработанный на коде с <em>анимацией</em> и <em>адаптивами</em> и включить его в <br>свой сайт-портфолио.
+        
 
-    </p>
+        <div class="info">
 
-    <p>Обожаю свою <strong><em>жену</em></strong> и <strong><em>котиков.</em></strong></p>
+            <img src="avatar.JPG" alt="Евгений Шиняков" class="inline">
 
-    <h4>Список социальных сетей</h4>
-        <a href="https://t.me/mnem0n1ck_bot" target="_blank">Telegram</a>
-        |
-        <a href="https://www.youtube.com/@mnem0n1ck" target="_blank">YouTube</a>
-        |
-        <a href="https://www.instagram.com/sveetplace/" target="_blank">Instagram</a>
+            <div class="info-text">
+                <h1>Евгений Шиняков</h1>
 
-    <h2>Мои хобби</h2>
+                <p>
+                Я занимаюсь <strong>Web-разработкой</strong> недавно. <br>Моя цель запустить полноценный сайт разработанный на коде с <em>анимацией</em> и <em>адаптивами</em> и включить его в свой сайт-портфолио.</p>
+                    <br>
+                <p>Обожаю свою <strong><em>жену</em></strong> и <strong><em>котиков.</em></strong></p>
+                <!-- </div> -->
 
-    <ol>
-        <li>Айкидо</li>
-        <li>Мотоциклы</li>
-        <li>Путешествия</li>
-        <li>Дизайн</li>
-        <li>Поэзия</li>
-    </ol>
+                <!-- <div class="info-media bg-cyan inline"> -->
+                <h4>Список социальных сетей</h4>
 
-    <h2>Опыт работы</h2>
+                <a href="https://t.me/mnem0n1ck_bot" target="_blank">Telegram</a>
+                |
+                <a href="https://www.youtube.com/@mnem0n1ck" target="_blank">YouTube</a>
+                |
+                <a href="https://www.instagram.com/sveetplace/" target="_blank">Instagram</a>
+            </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Завод ПМЗ</td>
-                <td>Оператор ПВМ</td>
-                <td>2001-2003</td>
-            </tr>
-            <tr>
-                <td>ЧП Петровский</td>
-                <td>Сборщик-ремонтник ЭВМ</td>
-                <td>2004-2007</td>
-            </tr>
-            <tr>
-                <td>ООО Интерма</td>
-                <td>Системный администратор</td>
-                <td>2008-2019</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Свяжитесь со мной</h2>
-
-    <form action="\">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
         </div>
-        <br>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-        <br>
+        
 
-        <div>
-            <label for="massage">Ваше сообщение:</label>
+        <div class="card info-media bg-pink">
+            <h2>Мои хобби</h2>
             <br>
-            <textarea id="massage" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            <div class="sheet">
+                <ol>
+                    <li>Айкидо</li>
+                    <li>Мотоциклы</li>
+                    <li>Путешествия</li>
+                    <li>Дизайн</li>
+                    <li>Поэзия</li>
+                </ol>
+            </div>
         </div>
 
-    </form>
+        <div class="card info-media bg-blue">
+            <h2>Опыт работы</h2>
+            <br>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Завод ПМЗ</td>
+                        <td>Оператор ПВМ</td>
+                        <td>2001-2003</td>
+                    </tr>
+                    <tr>
+                        <td>ЧП Петровский</td>
+                        <td>Сборщик-ремонтник ЭВМ</td>
+                        <td>2004-2007</td>
+                    </tr>
+                    <tr>
+                        <td>ООО Интерма</td>
+                        <td>Системный администратор</td>
+                        <td>2008-2019</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+
+        
+
+        <form action="\" class="form">
+            <h2>Свяжитесь со мной</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="massage">Ваше сообщение:</label>
+                <textarea id="massage" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+        </form>
 
 
-    <button type="submit">Отправить</button>
-    
+        <button type="submit" class="btn">Отправить</button>
+        <br>
+        <br>
+    </div>
 </body>
 </html>
