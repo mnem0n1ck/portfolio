@@ -159,6 +159,8 @@ a:active{
     font-family: inherit;
     margin-left: 40%;
     /* text-align: center; */
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 .btn:hover{
@@ -218,5 +220,14 @@ a:active{
     padding: 15px 0 10px;
     outline: none;
     font-family: inherit;
+}
+
+input::placeholder{
+    /* color: #86898f; */
+    opacity: 50%;
+}
+
+textarea::placeholder {
+    opacity: 50%;
 }
 
